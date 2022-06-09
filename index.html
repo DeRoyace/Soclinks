@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Royace - social links</title>
+    <title>De Royace - Soclinks</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             margin: auto;
@@ -15,32 +17,25 @@
         body {
             background-repeat: no-repeat;
             background-image: url('starBlades.jpg');
-            background-size: 100%;
+            background-attachment: fixed;
         }
 
-        #mypic {
-            border-radius: 160px;
-        }
 
         h1,
         h2,
-        #tagline,
+        .tagline,
         #t2 {
             color: rgba(240, 248, 255, 0.616);
         }
 
-        h1 {
-            font-family: 'Kaushan Script', cursive;
-        }
-
-
-        #skill {
+        /* #skill {
             width: 40%;
-        }
+        } */
 
         #bgtrans {
             background: rgba(0, 0, 0, 0.712);
-            height: 850px;
+            padding-bottom: 40%;
+            margin: 0;
         }
 
         .hrline {
@@ -51,28 +46,89 @@
             margin-top: 10px;
         }
 
-        #t1 {
-            padding-top: 7rem;
+        h1 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 48px;
         }
 
-        #links img{
-            height: 12%;
-            width: 12%;
+        .mypic {
+            border-radius: 160px;
+            height: 205px;
+            width: 205px;
+        }
+
+        .tagline {
+            font-size: 21px;
+        }
+
+        #t1 {
+            padding-top: 15%;
+            /* padding-bottom: 15%; */
+        }
+
+        .links img {
+            height: 40px;
+            width: 40px;
             margin-top: 7%;
-            padding: 5px;
+            padding-right: 5px;
             transition: 600ms;
         }
 
-        #links img:hover{
-            /* background: linear-gradient(rgb(240, 6, 6), rgb(6, 122, 12)); */
-            /* box-shadow: 0 0 10px rgb(255, 255, 255); */
-            height: 16%;
-            width: 16%;
-            padding: 0px;
-            padding-top: 0px;
+
+        .links img:hover {
+            height: 55px;
+            width: 55px;
+            padding-top: -5px;
             padding-bottom: 5px;
-            margin: 0px;
+            margin: 0%;
             transition: 360ms;
+        }
+
+        #content {
+            visibility: collapse;
+            height: 0px;
+        }
+
+        @media only screen and (max-width:620px) {
+            h1 {
+                font-family: 'Kaushan Script', cursive;
+                font-size: 38px;
+                margin-top: 25px;
+            }
+
+            #bgtrans table {
+                visibility: collapse;
+            }
+            #bgtrans{
+                height: 600px;
+            }
+
+            #content {
+                visibility: visible;
+                width: 80%;
+                position: absolute;
+                margin: auto;
+                top: 130px;
+                left: 34px;
+            }
+
+            #mypic {
+                border-radius: 160px;
+                height: 160px;
+                width: 160px;
+            }
+
+            .tagline {
+                font-size: 16px;
+            }
+
+            .links img {
+                height: 30px;
+                width: 30px;
+                margin-top: 7%;
+                padding-right: 5px;
+                transition: 600ms;
+            }
         }
     </style>
 </head>
@@ -83,15 +139,15 @@
         <table id="t1" cellspacing="25">
             <tr>
                 <td>
-                    <div id="biopic"><img src="Self2.png" id="mypic" alt="potrait" height="205px" width="205px"></div>
+                    <div class="biopic"><img src="Self2.png" class="mypic" alt="potrait"></div>
                 </td>
-                <td>
+                <td id="r1c2">
                     <h1>Rohit Roy</h1>
-                    <p id="tagline">Software R&D Enthusiasts <br>
+                    <p class="tagline">Software R&D Enthusiasts <br>
                         <em>Founder of <strong>MetaBlog</strong> (coming soon...)</em>
                     </p>
                     <div class="hrline"></div>
-                    <div id="links">
+                    <div class="links">
                         <a href="https://twitter.com/derohitroyace" target="blank"><img align="center"
                                 src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
                                 alt="derohitroyace" /></a>
@@ -107,12 +163,42 @@
                         <a href="https://www.hackerrank.com/creative_roy2003" target="blank"><img align="center"
                                 src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
                                 alt="creative_roy2003" /></a>
+                        <a href="https://www.quora.com/profile/Rohit-Roy-1187" target="blank"><img align="center"
+                                src="https://miro.medium.com/max/512/1*tj25laTAHjpuxLoqcmXMug.png"
+                                alt="Rohit-Roy-1187" /></a>
                     </div>
                 </td>
 
             </tr>
         </table>
 
+        <div id="content">
+            <div class="biopic"><img src="Self2.png" class="mypic" alt="potrait"></div>
+            <h1>Rohit Roy</h1>
+            <p class="tagline">Software R&D Enthusiasts <br>
+                <em>Founder of <strong>MetaBlog</strong> (coming soon...)</em>
+            </p>
+            <div class="hrline"></div>
+            <div class="links">
+                <a href="https://twitter.com/derohitroyace" target="blank"><img align="center"
+                        src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
+                        alt="derohitroyace" /></a>
+                <a href="https://linkedin.com/in/rohit-roy-51b2b6222" target="blank"><img align="center"
+                        src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+                        alt="rohit-roy-51b2b6222" /></a>
+                <a href="https://instagram.com/de_rohit_roy" target="blank"><img align="center"
+                        src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
+                        alt="de_rohit_roy" /></a>
+                <a href="https://www.youtube.com/c/de royace creations" target="blank"><img align="center"
+                        src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
+                        alt="de royace creations" /></a>
+                <a href="https://www.hackerrank.com/creative_roy2003" target="blank"><img align="center"
+                        src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
+                        alt="creative_roy2003" /></a>
+                <a href="https://www.quora.com/profile/Rohit-Roy-1187" target="blank"><img align="center"
+                        src="https://miro.medium.com/max/512/1*tj25laTAHjpuxLoqcmXMug.png" alt="Rohit-Roy-1187" /></a>
+            </div>
+        </div>
         <embed src="Astronomia.mp3" loop="true" autostart="true" width="2" height="0">
 
         <!-- <div id="skill">
