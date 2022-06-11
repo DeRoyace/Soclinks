@@ -1,0 +1,111 @@
+* {
+    margin: auto;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url('starBlades.jpg');
+    background-attachment: fixed;
+}
+
+h1, h2, .tagline{
+    color: rgba(240, 248, 255, 0.616);
+}
+
+#bgtrans {
+    background: rgba(0, 0, 0, 0.712);
+    padding: 7px;
+    margin: 0;
+}
+
+.hrline {
+    background: linear-gradient(90deg, rgb(255, 255, 255), transparent);
+    height: 3px;
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+}
+
+.mypic {
+    border-radius: 160px;
+    height: 205px;
+    width: 205px;
+    margin-left: auto;
+    box-shadow: 0 0 7px rgb(73, 85, 243), 0 0 20px white;
+}
+
+.tagline {
+    font-size: 21px;
+}
+
+.links img {
+    height: 40px;
+    width: 40px;
+    margin-top: 7%;
+    padding-right: 5px;
+    transition: 600ms;
+}
+
+
+.links img:hover {
+    height: 55px;
+    width: 55px;
+    padding-top: -5px;
+    padding-bottom: 15px;
+    margin: 0%;
+    transition: 360ms;
+}
+
+#content{
+    display: inline-block;
+    margin: 0 0 0 25px;
+    text-align: left;
+}
+
+.main{
+    margin: 195px auto 208px auto;
+    text-align: center;
+}
+
+@media only screen and (max-width:620px) {
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 45px;
+        margin-top: 25px;
+    }
+
+    .main{
+        margin-top: 16%;
+        /* margin-bottom: 10%; */
+        /* width: 90%; */
+    }
+
+    #content {
+        visibility: visible;
+        width: 75%;
+        margin: 0;
+    }
+
+    #mypic {
+        border-radius: 160px;
+        height: 160px;
+        width: 160px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .links img {
+        height: 34px;
+        width: 34px;
+        margin-top: 7%;
+        padding-right: 5px;
+        transition: 600ms;
+    }
+}
