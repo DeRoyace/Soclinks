@@ -4,7 +4,7 @@
 
 body {
     background-repeat: no-repeat;
-    background-image: url('starBlades.jpg');
+    background-image: url('images/starBlades.jpg');
     background-attachment: fixed;
 }
 
@@ -14,7 +14,7 @@ h1, h2, .tagline{
 
 #bgtrans {
     background: rgba(0, 0, 0, 0.712);
-    padding: 7px;
+    padding: 0.45%;
     margin: 0;
 }
 
