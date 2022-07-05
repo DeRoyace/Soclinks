@@ -6,7 +6,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://github.com/DeRoyace/Soclinks/blob/master/images/Soclinks.png?raw=true" alt="project-screenshot" width="`1000" height="500/">
+<img src="https://github.com/DeRoyace/Soclinks/blob/master/images/Soclinks.png?raw=true" alt="project-screenshot" width="`1000" height="auto">
 <br>
 <img src="https://github.com/DeRoyace/Soclinks/blob/master/images/soclinks-mobile.png?raw=true" alt="project-screenshot" width="250" height="500/">
 
